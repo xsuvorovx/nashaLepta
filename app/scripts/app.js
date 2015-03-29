@@ -15,6 +15,7 @@ angular
     'ngResource',
     'ngRoute',
     'ui.bootstrap'
+
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,11 +23,32 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/help', {
+        templateUrl: 'views/help.html',
+        controller: 'HelpCtrl'
+      })
+      .when('/partners', {
+        templateUrl: 'views/partners.html',
+        controller: 'PartnersCtrl'
+      })
+      .when('/eventCalendar', {
+        templateUrl: 'views/eventCalendar.html',
+        controller: 'EventCalendarCtrl'
+      })
+      .when('/photos', {
+        templateUrl: 'views/photos.html',
+        controller: 'PhotosCtrl'
+      })
+      .when('/videos', {
+        templateUrl: 'views/videos.html',
+        controller: 'VideosCtrl'
+      })
+      .when('/contacts', {
+        templateUrl: 'views/contacts.html',
+        controller: 'ContactsCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
+
