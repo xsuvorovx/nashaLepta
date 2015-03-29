@@ -14,8 +14,9 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ui.bootstrap'
-
+    'ui.bootstrap',
+    'ngSanitize',
+    'ngCkeditor'
   ])
   .config(function ($routeProvider) {
     $routeProvider
